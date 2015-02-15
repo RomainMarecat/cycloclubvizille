@@ -183,7 +183,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 #main-nav .navbar-brand img{
     margin-right: 15px;
-    max-width: 60px;
+    max-height: 60px;
 }
 
 #main-nav .navbar-brand{
@@ -1325,10 +1325,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         color:#6d6d6d;
     }
     
-    #main-nav .navbar-brand img{
-        margin-right: 10px;
-        max-width: 40px;
-    }
+
 
     #home .container{
         margin-top:-80px;
