@@ -1,0 +1,6 @@
+{
+    "name": "jquery-min",
+    "version": "2.1.1",
+    "main": "jquery.min.js",
+    "ignore": []
+}
