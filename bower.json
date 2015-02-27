@@ -1,0 +1,27 @@
+{
+  "name": "cycloclubvizille",
+  "version": "1.0.0",
+  "homepage": "http://romainmarecat.github.io/cycloclubvizille/",
+  "authors": [
+    "Romain Marecat <romain.marecat@tootici.fr>"
+  ],
+  "description": "Site web du cyclo-club de Vizille",
+  "main": "index.html",
+  "keywords": [
+    "cycloclubvizille",
+    "velo",
+    "cyclo",
+    "sport",
+    "cyclisme",
+    "vizille"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "jquery": "~2.1.3",
+    "modernizr": "~2.8.3",
+    "respond": "~1.4.2",
+    "jquery-min": "~2.1.1"
+  }
+}
