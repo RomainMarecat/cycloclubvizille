@@ -1,5 +1,5 @@
 <?php 
-$emailTo = 'thomas.df38@hotmail.fr';
+$emailTo = 'thomas.difruscia@cycloclubvizille.com';
 $siteTitle = 'Cyclo-club Vizille';
 
 error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
