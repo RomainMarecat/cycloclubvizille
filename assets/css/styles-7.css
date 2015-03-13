@@ -83,33 +83,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     border-top:7px solid #6EE3E7;
 }
 
-.color1 .service-icon,
-.color1.service-item ul li:nth-child(2):before{
-    background:#25A7B0;
-}
-
-.color1 .service-icon:after{
-    border:3px solid #25A7B0;
-}
-
-.color2 .service-icon,
-.color2.service-item ul li:nth-child(2):before{
-    background:#6EE3E7;
-}
-
-.color2 .service-icon:after{
-    border:3px solid #6EE3E7;
-}
-
-.color3 .service-icon,
-.color3.service-item ul li:nth-child(2):before{
-    background:#334959;
-}
-
-.color3 .service-icon:after{
-    border:3px solid #334959;
-}
-
 /*------------------
 ----- Buttons ------
 --------------------*/
@@ -350,6 +323,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .service-icon{
+    background-color: #fff;
     position:relative;
     display:block;
     text-align:center;
@@ -359,13 +333,16 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     border-radius:50%;
     font-size:62px;
     line-height:150px;
-    background:#334959;
     color:#fff;
     -webkit-transition:all 0.2s ease-out;
     transition:all 0.2s ease-out;
 }
 
-.service-icon:after {
+.service-icon img {
+    width:150px;
+}
+
+/*.service-icon:after {
     pointer-events:none;
     content:"";
     position:absolute;
@@ -374,12 +351,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     height:174px;
     top:-12px;
     left:-12px;
-    border:3px solid #334959;
     border-radius:50%;
     -webkit-transition:all 0.2s ease-out;
     transition:all 0.2s ease-out;
 }
-
+*/
 .no-csstransforms .service-icon:after{
 	display:none;
 }
@@ -389,14 +365,14 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     color:#fff;
 }
 
-.service-icon [class*=fa]{
+.service-icon [class*=fcc]{
     -webkit-transform:scale(1);
     transform:rotate(0);
     -webkit-transition:all 0.3s ease-out;
     transition:none;
 }
 
-.service-item:hover [class*=fa]{
+.service-item:hover [class*=ffc]{
     -webkit-transform:scale(1.3);
     transform:rotate(360deg);
     -webkit-transition:all 0.5s ease-out;
