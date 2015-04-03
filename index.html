@@ -51,18 +51,6 @@
 	</head>
   
 	<body data-spy="scroll" data-target="#main-nav" data-offset="200">
-
-		<div id="fb-root"></div>
-		<script>
-		(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=443534735805336&version=v2.3";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-		</script>
-		
 	
 		<!--=== PAGE PRELOADER ===-->
 		<div id="page-loader"><span class="page-loader-gif"></span></div>
@@ -496,6 +484,18 @@
 		FACEBOOK
 		=============================================== -->
 		<section id="facebook">
+
+			<div id="fb-root"></div>
+			<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=443534735805336&version=v2.3";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+			</script>
+			
 		
 			<div class="fb-post" data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553" data-width="500">
 			
