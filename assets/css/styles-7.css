@@ -309,7 +309,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 /*-----------------------
 ---- Services Styles ----
 -------------------------*/
-#facebook {
+#facebook, #infos {
     background-color: #fff;
     box-shadow: 0 0 50px rgba(0,0,0,0.5); 
 }
