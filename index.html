@@ -126,27 +126,34 @@
 		<!-- ==============================================
 		FACEBOOK
 		=============================================== -->
-		<section id="facebook" class="add-padding">
+ 		<section id="facebook" class="add-padding">
 
 			<div class="container">
 
 				<h1 class="section-title big-text scrollimation fade-up">Actualités</h1>
 
 				<div class="row">
-					<div id="fb-root"></div>
-					<script>
-					(function(d, s, id) {
-					  var js, fjs = d.getElementsByTagName(s)[0];
-					  if (d.getElementById(id)) return;
-					  js = d.createElement(s); js.id = id;
-					  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=443534735805336&version=v2.3";
-					  fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));
-					</script>
-					<div class="fb-post col-sm-12" data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553" data-width="500"></div>
+					<div class="col-sm-12">
+						<div id="fb-root">
+							
+						</div>
+						<div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=1421510451497076&amp;id=1417991315182323" data-width="500">
+						
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
+
+		<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
 		
 		<!-- ==============================================
 		SERVICES
@@ -414,18 +421,29 @@
 
 					<h1 class="big-text text-center scrollimation fade-in">Nos Partenaires</h1>
 				
-					<article class="col-xs-4 col-sm-4 col-md-4 text-center">
-					<img class="img-responsive" src="assets/images/partenaires/image2.png"  alt="Vers l'arbre">
+					<article class="col-xs-3 col-sm-3 col-md-3 text-center">
+						<img class="img-responsive" src="assets/images/partenaires/image2.png"  alt="Vers l'arbre">
 					</article>
 
-					<article class="col-xs-4 col-sm-4 col-md-4 text-center">
-						<img class="img-responsive" src="assets/images/partenaires/image1.gif"  alt="Ville de Vizille">
+					<article class="col-xs-3 col-sm-3 col-md-3 text-center">
+						<a href="http://www.ville-vizille.fr" target="_blank">
+							<img class="img-responsive" src="assets/images/partenaires/image1.gif"  alt="Ville de Vizille">
+						</a>
 					</article>
 
 
-					<article class="col-xs-4 col-sm-4 col-md-4 text-center">
-						<img class="img-responsive" src="assets/images/partenaires/image3.png"  alt="Why Not">
+					<article class="col-xs-3 col-sm-3 col-md-3 text-center">
+						<a href="https://www.facebook.com/pages/Le-Why-Not-Manigod/1486031351681500" target="_blank">
+							<img class="img-responsive" src="assets/images/partenaires/image3.png"  alt="Why Not">
+						</a>
 					</article>
+
+					<article class="col-xs-3 col-sm-3 col-md-3 text-center">
+						<a href="http://piecesaccessoiresvelo.fr" target="_blank">
+							<img class="img-responsive" src="assets/images/partenaires/image4.png"  alt="Distri Cycle 38">
+						</a>
+					</article>
+
 
 				</div>
 
