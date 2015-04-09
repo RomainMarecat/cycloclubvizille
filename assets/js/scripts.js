@@ -56,10 +56,12 @@ $(document).ready(function() {
 	$.each( data, function( key, val ) {
 	items.push(val);
 	});
-
-	for (var i = 1; i <= items.length; i+= 2) {
+	var nbpost = 0;
+	for (var i = 1; i <= items.length; i+=2) {
+		nbpost ++;
 		var j = i-1;
-		$('#slidr-div').append('<div data-slidr="' + i + '" class="row"><div class="col-xs-12 col-sm-5 col-sm-offset-1"><div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid='+ items[j] +'&amp;id=1417991315182323" data-width="400"></div></div><div class="col-xs-12 col-sm-5 col-sm-offset-1"><div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid='+ items[i] +'&amp;id=1417991315182323" data-width="400"></div></div></div>');
+
+		$('#slidr-div').append('<div data-slidr="' + nbpost + '" class="row"><div class="col-xs-10 col-sm-5 col-xs-offset-1"><div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid='+ items[j] +'&amp;id=1417991315182323" data-width="400"></div></div><div class="col-xs-10 col-sm-5 col-xs-offset-1"><div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid='+ items[i] +'&amp;id=1417991315182323" data-width="400"></div></div></div>');
 	}
 
 
