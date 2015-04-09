@@ -1,0 +1,33 @@
+{
+  "name": "slidr",
+  "main": "slidr.js",
+  "version": "0.5.0",
+  "homepage": "https://github.com/bchanx/slidr",
+  "authors": [
+    "bchanx <bchanx@gmail.com>"
+  ],
+  "description": "add some slide effects.",
+  "keywords": [
+    "slidr",
+    "slider",
+    "carousel"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.5.0",
+    "commit": "397004f7acc338b112a9e1dc2481acc1446e0209"
+  },
+  "_source": "git://github.com/bchanx/slidr.git",
+  "_target": "~0.5.0",
+  "_originalSource": "slidr",
+  "_direct": true
+}

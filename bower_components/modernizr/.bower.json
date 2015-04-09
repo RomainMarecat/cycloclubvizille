@@ -10,10 +10,5 @@
   },
   "_source": "git://github.com/Modernizr/Modernizr.git",
   "_target": "~2.8.3",
-<<<<<<< HEAD
-  "_originalSource": "modernizr",
-  "_direct": true
-=======
   "_originalSource": "modernizr"
->>>>>>> 1f95b9e85892920b4f0ac6de834c05a6c1377691
 }

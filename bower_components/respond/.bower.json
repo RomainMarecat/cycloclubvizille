@@ -16,10 +16,5 @@
   },
   "_source": "git://github.com/scottjehl/Respond.git",
   "_target": "~1.4.2",
-<<<<<<< HEAD
-  "_originalSource": "respond",
-  "_direct": true
-=======
   "_originalSource": "respond"
->>>>>>> 1f95b9e85892920b4f0ac6de834c05a6c1377691
 }

@@ -135,38 +135,28 @@
 
 				<h1 class="section-title big-text scrollimation fade-up">Actualités</h1>
 
+				<div onload="loadJson();" id="fb-root">
+							
+				</div>
+
 				<div class="row">
 
-					<div id="fb-root">
-							
+					<div id="slidr-div" class="col-sm-12">
 					</div>
-
-					<div class="col-xs-12 col-sm-6">
-
-						<div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=1421510451497076&amp;id=1417991315182323" data-width="500">
-						
-						</div>
-
-					</div>	
-
-					<div class="col-xs-12 col-sm-6">
-
-						<div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=1421504314831023&amp;id=1417991315182323" data-width="500">
-						
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</section>
 
 		<script>
-		(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
 		</script>
 		
 		<!-- ==============================================
@@ -604,6 +594,7 @@
 		=============================================== -->	
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/slidr/slidr.min.js"></script>
 		<script src="assets/js/jquery.scrollto.js"></script>
 		<script src="assets/js/waypoints.min.js"></script>
 		<script src="assets/js/jquery.masonry.min.js"></script>
@@ -612,7 +603,9 @@
 		<script src="assets/js/twitterFetcher_v10_min.js"></script>
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 		<script src="assets/js/contact.js"></script>
+		<script src="data/data.json"></script>	
 		<script src="assets/js/scripts.js"></script>
+
 		
 		<script>
 		

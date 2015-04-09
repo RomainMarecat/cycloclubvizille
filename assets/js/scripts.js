@@ -50,6 +50,37 @@ $(document).ready(function() {
 
 	$('#home .container').css({ 'opacity' : (1.4 - st/400) });
 
+
+	/* Facebook */
+	var items = [];
+	$.each( data, function( key, val ) {
+	items.push(val);
+	});
+
+	for (var i = 1; i <= items.length; i+= 2) {
+		var j = i-1;
+		$('#slidr-div').append('<div data-slidr="' + i + '" class="row"><div class="col-xs-12 col-sm-5 col-sm-offset-1"><div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid='+ items[j] +'&amp;id=1417991315182323" data-width="400"></div></div><div class="col-xs-12 col-sm-5 col-sm-offset-1"><div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid='+ items[i] +'&amp;id=1417991315182323" data-width="400"></div></div></div>');
+	}
+
+
+	slidr.create('slidr-div', {
+			  breadcrumbs: true,
+			  controls: 'border',
+			  direction: 'horizontal',
+			  fade: false,
+			  keyboard: true,
+			  overflow: true,
+			  pause: false,
+			  theme: '#222',
+			  timing: { 'cube': '0.5s ease-in' },
+			  touch: true,
+			  transition: 'cube'
+	}).start();
+
+	$('.slidr-control.left').addClass('fa fa-5x fa-angle-left');
+
+	$('.slidr-control.right').addClass('fa fa-5x fa-angle-right');
+
 	
 	/*============================================
 	Navigation Functions
