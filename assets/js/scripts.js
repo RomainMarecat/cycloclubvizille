@@ -196,7 +196,7 @@ $(document).ready(function() {
 			slides = elem.find('.project-description').data('images').split(',');
 
 		for (var i = 0; i < slides.length; ++i) {
-			slidesHtml = slidesHtml + '<li><img src='+slides[i]+' alt=""></li>';
+			slidesHtml = slidesHtml + '<li><img src='+slides[i]+' class="img-responsive" alt=""></li>';
 		}
 		
 		slidesHtml = slidesHtml + '</ul>';
