@@ -569,6 +569,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     position:relative;
     margin:0;
     width:370px;
+    height:277.5px;
     margin-bottom:25px;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -610,7 +611,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     -webkit-transition:-webkit-transform 4s ease-in;
     transition:transform 4s linear;
 }
-
 
 .project-item .hover-mask {
     position:absolute;
@@ -758,6 +758,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.flexslider .slides img {
+    max-width: 705px;
+    max-height:500px;
+    margin: auto;
+    width: auto !important;
 }
 
 #project-slider .flex-direction-nav{

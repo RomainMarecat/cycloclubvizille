@@ -1,25 +1,11 @@
 $(document).ready(function() {
-	
-	/*============================================
-	Page Preloader
-	==============================================*/
-	
-/*	$(window).load(function(){
-		$('#page-loader').fadeOut(500,function(){
-		});
 		
-	});	
-*/	loadGmap();
-
-	
 	/*============================================
 	Header
 	==============================================*/
 	
 	$('#home').height($(window).height()+50);
-	
-	$.backstretch('assets/images/header-bg.jpg');
-	
+		
 	$(window).scroll( function() {
 		var st = $(this).scrollTop(),
 			wh = $(window).height(),
@@ -50,40 +36,6 @@ $(document).ready(function() {
 	});
 
 	$('#home .container').css({ 'opacity' : (1.4 - st/400) });
-
-
-	/* Facebook */
-	var items = [];
-	$.each( data, function( key, val ) {
-	items.push(val);
-	});
-	var nbpost = 0;
-	for (var i = 1; i <= items.length; i+=2) {
-		nbpost ++;
-		var j = i-1;
-
-		$('#slidr-div').append('<div data-slidr="' + nbpost + '" class="row"><div class="col-xs-10 col-sm-5 col-xs-offset-1"><div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid='+ items[j] +'&amp;id=1417991315182323" data-width="400"></div></div><div class="col-xs-10 col-sm-5 col-xs-offset-1"><div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid='+ items[i] +'&amp;id=1417991315182323" data-width="400"></div></div></div>');
-	}
-
-
-	slidr.create('slidr-div', {
-			  breadcrumbs: true,
-			  controls: 'border',
-			  direction: 'horizontal',
-			  fade: false,
-			  keyboard: true,
-			  overflow: true,
-			  pause: false,
-			  theme: '#222',
-			  timing: { 'cube': '0.5s ease-in' },
-			  touch: true,
-			  transition: 'cube'
-	}).start();
-
-	$('.slidr-control.left').addClass('fa fa-5x fa-angle-left');
-
-	$('.slidr-control.right').addClass('fa fa-5x fa-angle-right');
-
 	
 	/*============================================
 	Navigation Functions
@@ -116,20 +68,6 @@ $(document).ready(function() {
 		}
 	});
 
-	/*============================================
-	Skills
-	==============================================*/
-	$('.skills-item').each(function(){
-		var perc = $(this).find('.percent').data('percent');
-
-		$(this).data('height',perc);
-	})
-	
-	$('.touch .skills-item').each(function(){
-		$(this).css({'height':$(this).data('height')+'%'});
-	})
-	
-	$('.touch .skills-bars').css({'opacity':1});
 		
 	/*============================================
 	Project thumbs - Masonry
@@ -270,97 +208,7 @@ $(document).ready(function() {
 	$('.close-preview').click(function(){
 		closeProject();
 	})
-	
-	/*============================================
-	Twitter
-	==============================================*/
-	var tweetsLength = $('#twitter-slider').data('tweets-length'),
-		widgetID = $('#twitter-slider').data('widget-id');
-	
-	twitterFetcher.fetch(widgetID, 'twitter-slider', tweetsLength, true, false, true, '', false, handleTweets);
 
-	function handleTweets(tweets){
-	
-		var x = tweets.length,
-			n = 0,
-			tweetsHtml = '<ul class="slides">';
-			
-		while(n < x) {
-			tweetsHtml += '<li>' + tweets[n] + '</li>';
-			n++;
-		}
-		
-		tweetsHtml += '</ul>';
-		$('#twitter-slider').html(tweetsHtml);
-	
-		$('.twitter_reply_icon').html("<i class='fa fa-reply'></i>");
-		$('.twitter_retweet_icon').html("<i class='fa fa-retweet'></i>");
-		$('.twitter_fav_icon').html("<i class='fa fa-star'></i>");
-	  
-		$('#twitter-slider').flexslider({
-			prevText: '<i class="fa fa-angle-left"></i>',
-			nextText: '<i class="fa fa-angle-right"></i>',
-			slideshowSpeed: 5000,
-			useCSS: true,
-			controlNav: false, 
-			pauseOnAction: false, 
-			pauseOnHover: true,
-			smoothHeight: false
-		});
-	}
-	/*============================================
-	Contact Map
-	==============================================*/
-	function loadGmap(){
-	
-	if($('#gmap').length){
-	
-		var map;
-		var mapstyles = [ { "stylers": [ { "saturation": -100 } ] } ];
-		
-		var infoWindow = new google.maps.InfoWindow;
-		
-		var pointLatLng = new google.maps.LatLng(mapPoint.lat, mapPoint.lng);
-
-		var mapOptions = {
-			zoom: mapPoint.zoom,
-			center: pointLatLng,
-			zoomControl : true,
-			panControl : false,
-			streetViewControl : false,
-			mapTypeControl: false,
-			overviewMapControl: false,
-			scrollwheel: false,
-			styles: mapstyles
-		}
-		
-		map = new google.maps.Map(document.getElementById("gmap"), mapOptions);
-		
-		var marker = new google.maps.Marker({
-			position: pointLatLng, 
-			map: map, 
-			title:mapPoint.linkText,
-			icon: mapPoint.icon
-		});
-		
-		var mapLink = 'https://www.google.com/maps/preview?ll='+mapPoint.lat+','+mapPoint.lng+'&z=14&q='+mapPoint.mapAddress;
-		
-		var html = '<div class="infowin">'
-				+ mapPoint.infoText
-				+ '<a href="'+mapLink+'" target="_blank">'+mapPoint.linkText+'</a>'
-				+ '</div>';
-
-		google.maps.event.addListener(marker, 'mouseover', function() {
-			infoWindow.setContent(html);
-			infoWindow.open(map, marker);
-		});
-
-		google.maps.event.addListener(marker, 'click', function() {
-			window.open(mapLink,'_blank');
-		});
-		
-	}
-	}
 	/*============================================
 	Waypoints Animations
 	==============================================*/
