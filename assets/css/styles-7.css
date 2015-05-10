@@ -762,9 +762,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .flexslider .slides img {
     max-width: 705px;
-    max-height:500px;
+    max-height: 500px;
     margin: auto;
     width: auto !important;
+    height: auto !important;
+
 }
 
 #project-slider .flex-direction-nav{
