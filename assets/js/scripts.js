@@ -58,7 +58,8 @@ $(document).ready(function() {
 	items.push(val);
 	});
 	var nbpost = 0;
-	for (var i = 1; i <= items.length; i+=2) {
+	/* limit 10 posts */
+	for (var i = 1; i <= 10; i+=2) {
 		nbpost ++;
 		var j = i-1;
 
