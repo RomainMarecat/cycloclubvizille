@@ -151,7 +151,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 -------------------------*/
 
 #main-nav .container{
-    padding:0 0 20px;
+    padding:0 10px 20px;
 }
 
 #main-nav .navbar-brand img{
@@ -171,7 +171,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 .navbar-brand:hover,
 .navbar-brand:active,
 .navbar-brand:focus {
-    padding:0 10px;
+    padding:0 0px;
     font-size:30px;
     line-height:30px;
     font-weight:normal;
@@ -207,6 +207,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     transition:background 0.3s ease-out;
 }
 
+@media (max-width: 767px) {
+    #main-nav .nav {
+        background:transparent;
+        color:#fff;
+    }
+}
+
 #main-nav.scrolled{
     background:#fff;
     box-shadow: 0 0 3px rgba(0,0,0,0.2);
@@ -229,6 +236,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 #main-nav.scrolled .container{
     padding:10px 20px;
+}
+
+#main-nav ul{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    transition: color .2s ease-in;
+}
+
+
+#main-nav.scrolled ul{
+    background:transparent;
 }
 
 #main-nav .nav a,
@@ -1243,7 +1263,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     #main-nav .nav a,
     #main-nav .nav a:active,
     #main-nav .nav a:hover{
-        font-size:16px;
+        font-size:14px;
     }
 
     #main-nav li{
