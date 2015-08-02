@@ -133,9 +133,9 @@
 								</div>
 								<div class="modal-body">
 									<div class="row">
-										<form id="annonces-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="annonces.php" method="post" novalidate>
+										<form id="annonces-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" enctype="multipart/form-data" action="annonces.php" method="post" novalidate>
 											<div class="form-group">
-												<label class="control-label" for="contact-name">Nom/Prénom/Pseudo</label>
+												<label class="control-label" for="contact-name">Nom et Prénom</label>
 												<div class="controls">
 													<input id="contact-name" name="contactName" placeholder="Votre nom/prénom/pseudo" class="form-control requiredField" data-new-placeholder="Votre nom" type="text" data-error-empty="Entrez votre nom et prénom">
 													<i class="fa fa-user"></i>
@@ -160,6 +160,13 @@
 												<div class="controls">
 													<textarea id="contact-description" name="contactDescription" placeholder="Description de l'objet" class="form-control requiredField" data-new-placeholder="Votre description" rows="6" data-error-empty="Entrez la description de l'objet"></textarea>
 													<i class="fa fa-comment"></i>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label" for="contact-image">Image</label>
+												<div class="controls">
+													<input id="contact-image" type="file" name="contactImage" placeholder="Image de l'objet" class="form-control requiredField" data-new-placeholder="Votre Image" data-error-empty="Importez une image de l'objet">
+													<i class="fa fa-image"></i>
 												</div>
 											</div>
 											<div class="form-group">
