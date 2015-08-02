@@ -497,6 +497,77 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 /*-----------------------
+--- Annonces Elements Styles ----
+-------------------------*/
+
+#annonces li {
+    list-style: none;
+}
+
+#annonces .element__image{
+    overflow: hidden;
+    display: block;
+    padding: 0 .75em;
+    color: #5a595a;
+}
+
+#annonces .element__heading {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+    margin-bottom: .25em;
+    line-height: 1.25;
+    padding: 0 .75em;
+}
+
+#annonces .element__seller {
+    color: #999;
+    font-size: .8em;
+    margin-bottom: 0;
+    white-space: nowrap;
+    padding: 0 .75em;
+}
+
+#annonces .element__seller a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+#annonces .element__location {
+    color: #999;
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-bottom: .25em;
+    padding: 0 .75em;
+    display: block;
+}
+
+.element__prices {
+    overflow: hidden;
+    padding: 0 .75em;
+}
+
+.element__price--old {
+    float: left;
+    position: relative;
+    margin-right: .5em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.element__price--new {
+    position: relative;
+    top: -0.2em;
+    font-size: 1.25em;
+}
+
+.element__price-contact {
+    position: relative;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/*-----------------------
 --- Portfolio Styles ----
 -------------------------*/
 
@@ -927,14 +998,15 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 ----- Contact Styles ----
 ------------------------*/
 
-#contact{
+#contact {
     background-image:url('../images/bg-contact.png');
     background-repeat:no-repeat;
     background-position:0 100%;
     background-color: #fff;
 }
 
-#contact-form .form-group label{
+#contact-form .form-group label,
+#annonces-form .form-group label {
     display:none;
     font-size:18px;
     line-height:24px;
@@ -942,18 +1014,21 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     text-transform:uppercase;
 }
 
-#contact-form.no-placeholder .form-group label{
+#contact-form.no-placeholder .form-group label,
+#annonces-form.no-placeholder .form-group label {
     display:block;
 }
 
-#contact-form .controls {
+#contact-form .controls,
+#annonces-form .controls {
     padding:0;
     margin-bottom:30px;
     border:1px solid #ddd;
     border-radius:2px;
 }
 
-#contact-form .form-control {
+#contact-form .form-control,
+#annonces-form .form-control {
     background:transparent !important;
     border:none;
     border-bottom:3px solid transparent;
@@ -970,11 +1045,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     border-radius:2px;
 }
 
-#contact-form .form-group{
+#contact-form .form-group, 
+#annonces-form .form-group {
     position:relative;
 }
 
-#contact-form .form-group [class*=fa] {
+#contact-form .form-group [class*=fa],
+#annonces-form .form-group [class*=fa] {
     display:block;
     width:64px;
     position:absolute;
@@ -989,15 +1066,18 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     transition:opacity .2s ease-out;
 }
 
-#contact-form.no-placeholder .form-group [class*=fa]{
+#contact-form.no-placeholder .form-group [class*=fa],
+#annonces-form.no-placeholder .form-group [class*=fa] {
     top:30px;
 }
 
-#contact-form .form-control:focus + [class*=fa]{
+#contact-form .form-control:focus + [class*=fa],
+#annonces-form .form-control:focus + [class*=fa] {
     opacity:1;
 }
 
-#contact-form textarea.form-control {
+#contact-form textarea.form-control,
+#annonces-form textarea.form-control {
     height:auto;
     max-width:100%;
     min-width:100%;
@@ -1006,7 +1086,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     padding-top:10px;
 }
 
-#contact-form .form-control:focus {
+#contact-form .form-control:focus,
+#annonces-form .form-control:focus {
     background:#fff;
     border-bottom:3px solid #6EE3E7;
     outline:none;
@@ -1015,7 +1096,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     transition:border-color .3s ease-in;
 }
 
-#contact-form .error-message {
+#contact-form .error-message,
+#annonces-form .error-message {
     padding:5px 0;
     position:absolute;
     top:-30px;
@@ -1026,7 +1108,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     z-index:10;
 }
 
-#contact-form .error-message:before {
+#contact-form .error-message:before,
+#annonces-form .error-message:before {
     content:"\00d7";
     font-size: 21px;
     line-height: 21px;

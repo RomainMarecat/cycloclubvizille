@@ -51,6 +51,11 @@ $(document).ready(function() {
 
 	$('#home .container').css({ 'opacity' : (1.4 - st/400) });
 
+	$('#myContact').on('click', function () {
+		    var $btn = $(this).button('loading')
+		    // business logic...
+		    $btn.button('reset');
+	});
 
 	/* Facebook */
 	var items = [];
@@ -275,7 +280,7 @@ $(document).ready(function() {
 	/*============================================
 	Twitter
 	==============================================*/
-	var tweetsLength = $('#twitter-slider').data('tweets-length'),
+	/*var tweetsLength = $('#twitter-slider').data('tweets-length'),
 		widgetID = $('#twitter-slider').data('widget-id');
 	
 	twitterFetcher.fetch(widgetID, 'twitter-slider', tweetsLength, true, false, true, '', false, handleTweets);
@@ -308,7 +313,7 @@ $(document).ready(function() {
 			pauseOnHover: true,
 			smoothHeight: false
 		});
-	}
+	}*/
 	/*============================================
 	Contact Map
 	==============================================*/
