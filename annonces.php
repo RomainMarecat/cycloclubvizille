@@ -73,9 +73,10 @@ if(isset($_POST['submitted'])) {
 		
 	// upon no failure errors let's email now!
 	if(!isset($hasError)) {
-		$subject = 'Nouveau message de ' . $siteTitle.' pour l\'annonce' . $title;
+		$subject = 'Nouveau message de ' . $siteTitle.' pour l\'annonce ' . $title;
 		$sendCopy = trim($_POST['sendCopy']);
-		$body = "Name: $name \n\nEmail: $email \n\Description: $description \n\Prix: $price";
+		$body = "Name: $name \nEmail: $email \nTitre: $title \nDescription: $description \nPrix: $price \nCode postal: $codePostal \nVille: $city \n
+A integrer dans le fichier annonces.json: \n{\nname: $name,\nemail: $email,\ntitle: $title,\ndescription: $description,\nprice: $price,\ncodePostal: $codePostal,\ncity: $city\n}";
 		$headers = 'From: ' .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
 
 		mail($emailTo, $subject, $body, $headers);
@@ -90,7 +91,5 @@ if(isset($_POST['submitted'])) {
         // set our boolean completion value to TRUE
 		$emailSent = true;
 	}
-	file_put_contents("data.txt", $nameError);
-	file_put_contents("data.txt", $hasError);
 }
 ?>
