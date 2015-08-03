@@ -1,14 +1,14 @@
 $(document).ready(function() {
 	$('#annonces-form').submit(function() {
-		
+
 		var buttonCopy = $('#annonces-form button').html(),
 			errorMessage = $('#annonces-form button').data('error-message'),
 			sendingMessage = $('#annonces-form button').data('sending-message'),
 			okMessage = $('#annonces-form button').data('ok-message'),
 			hasError = false;
-		
+
 		$('#annonces-form .error-message').remove();
-		
+
 		$('#annonces-form .requiredField').each(function() {
 			if($.trim($(this).val()) == '') {
 				var errorText = $(this).data('error-empty');
@@ -25,28 +25,29 @@ $(document).ready(function() {
 				}
 			}
 		});
-		
+
 		if(hasError) {
+			console.log(hasError);
 			$('#annonces-form button').html('<i class="fa fa-times"></i>'+errorMessage);
 			setTimeout(function(){
 				$('#annonces-form button').html(buttonCopy);
 			},2000);
 		} else {
 			$('#annonces-form button').html('<i class="fa fa-spinner fa-spin"></i>'+sendingMessage);
-			
+
 			var formInput = $(this).serialize();
 			$.post($(this).attr('action'),formInput, function(data){
 				$('#annonces-form button').html('<i class="fa fa-check"></i>'+okMessage);
-				
+
 				$('#annonces-form')[0].reset();
-				
+
 				setTimeout(function(){
 					$('#annonces-form button').html(buttonCopy);
 				},2000);
-				
+
 			});
 		}
-		
-		return false;	
+
+		return false;
 	});
 });
