@@ -340,7 +340,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 
-#services{
+#annonces, #services{
     background-color: #fff;
     box-shadow: 0 0 50px rgba(0,0,0,0.5);
 }
@@ -565,6 +565,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     position: relative;
     font-size: 1.25em;
     font-weight: bold;
+}
+
+.btn__annonces {
+    background:#6EE3E7;
 }
 
 /*-----------------------

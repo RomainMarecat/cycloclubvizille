@@ -1,4 +1,20 @@
 $(document).ready(function() {
+
+	$('.btn__annonces').click(function(e){
+		e.preventDefault();
+		console.log("Merci de déposer une annonce !");
+		$.ajax({
+	       url: './data/tracking.php',
+	       dataType: 'json',
+	       success: function(data){
+	            console.log(data);
+	       },
+	       failure: function(error){
+	            console.log(error);
+	       }
+    	});
+	});
+
 	$('#annonces-form').submit(function() {
 
 		var buttonCopy = $('#annonces-form button').html(),
