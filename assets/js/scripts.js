@@ -57,6 +57,13 @@ $(document).ready(function() {
 		    $btn.button('reset');
 	});
 
+	$(function() {
+	    setTimeout(function() {
+	        $.bootstrapGrowl("<a class='default-toaster' href='#skills'>Nouvel Article en ligne !</a>", { type: 'info' });
+	    }, 2000);
+	});
+
+
 	/* Facebook */
 	var items = [];
 	$.each( data, function( key, val ) {

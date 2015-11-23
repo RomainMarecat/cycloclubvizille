@@ -20,7 +20,7 @@ $data = [
 	'remotehost' => $remotehost,
 	'nbclick DP' => $nbclickDP
 ];
-$current = implode(',', $data);
-file_put_contents("tracking.json", $current . "\n" . PHP_EOL, FILE_APPEND);
+
+file_put_contents("tracking.json", json_encode($data) . PHP_EOL, FILE_APPEND);
 
 return $data;
