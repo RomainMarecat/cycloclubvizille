@@ -90,29 +90,29 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .color1 .service-icon,
 .color1.service-item ul li:nth-child(2):before{
-    background:#25A7B0;
+    background:#fff;
 }
 
 .color1 .service-icon:after{
-    border:3px solid #25A7B0;
+    border:3px solid #fff;
 }
 
 .color2 .service-icon,
 .color2.service-item ul li:nth-child(2):before{
-    background:#6EE3E7;
+    background:#fff;
 }
 
 .color2 .service-icon:after{
-    border:3px solid #6EE3E7;
+    border:3px solid #fff;
 }
 
 .color3 .service-icon,
 .color3.service-item ul li:nth-child(2):before{
-    background:#334959;
+    background:#fff;
 }
 
 .color3 .service-icon:after{
-    border:3px solid #334959;
+    border:3px solid #fff;
 }
 
 /*------------------
