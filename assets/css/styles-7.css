@@ -3,7 +3,7 @@
 -------------------------*/
 
 body{
-    font-family: Raleway, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:16px;
     font-weight:300;
     color:#6d6d6d;
@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .bg-color2{
     color:#fff;
-    background:#6EE3E7;
+    background:#6d6d6d;
 }
 
 .bg-color3{
@@ -81,11 +81,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .border-bottom-color2{
-    border-bottom:7px solid #6EE3E7;
+    border-bottom:7px solid #6d6d6d;
 }
 
 .border-top-color2{
-    border-top:7px solid #6EE3E7;
+    border-top:7px solid #6d6d6d;
 }
 
 .color1 .service-icon,
@@ -371,7 +371,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 #facebook {
     color:#fff;
-    background:#6EE3E7;
+    background:#6d6d6d;
     box-shadow: 0 0 50px rgba(0,0,0,0.5); 
 }
 
@@ -1132,7 +1132,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     position:absolute;
     top:0;
     left:5px;
-    color:#e5e5e5;
     font-size:24px;
     line-height:53px;
     text-align:center;
