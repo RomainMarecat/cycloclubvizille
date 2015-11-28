@@ -59,7 +59,11 @@ $(document).ready(function() {
 
 	$(function() {
 	    setTimeout(function() {
-	        $.bootstrapGrowl("<a class='default-toaster' href='#bilan'>Nouvel Article en ligne !</a>", { type: 'info' });
+	        $.bootstrapGrowl("<a class='default-toaster' href='#bilan'>Voir le Bilan 2015</a>", { type: 'info' });
+	    }, 2000);
+
+	    setTimeout(function() {
+	        $.bootstrapGrowl("<a class='default-toaster' href='#informations'>Inscriptions 2016</a>", { type: 'info' });
 	    }, 2000);
 	});
 
