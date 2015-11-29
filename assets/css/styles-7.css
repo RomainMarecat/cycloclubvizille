@@ -365,6 +365,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 ---- Services Styles ----
 -------------------------*/
 /* Slidr */
+
 .slidr-control:after {
   border-color: transparent !important;   
 }
