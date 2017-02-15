@@ -71,9 +71,6 @@
                             <a href="blog/">Blog</a>
                         </li>
                         <li>
-                            <a href="portfolio/">Les photos</a>
-                        </li>
-                        <li>
                             <a href="#partenaires" class="scrollto">Nos Partenaires</a>
                         </li>
                         <li>
@@ -101,267 +98,23 @@
         <!-- ==============================================
         FACEBOOK
         =============================================== -->
-          <section id="facebook" class="add-padding bg-color2">
+          <section id="facebook" class="add-padding">
             <div class="container">
                 <h1 class="section-title big-text scrollimation fade-up">Actualités</h1>
-                <div id="col-xs-12 fb-root">
-                </div>
+<!--                 <div id="col-xs-12 fb-root">
+                </div> -->
                 <div class="row">
-                    <div id="slidr-div" class="col-xs-11 col-sm-11 col-md-12 col-lg-12">
+                    <div class="col-xs-6">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1712258972422221%26id%3D1417991315182323%26substory_index%3D0&width=500" width="500" height="522" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- ==============================================
-        VENTE
-        =============================================== -->
-         <section id="annonces" class="add-padding">
-            <div class="container add-padding">
-                <h1 class="section-title big-text scrollimation fade-up">Nos annonces près de Vizille</h1>
-                <div class="row">
-                    <!-- <p class="col-md-12 text-center">
-                        <button type="button" class="btn__annonces btn" href="#annonces"  data-toggle="modal" data-target="#modalDeposeAnnonce">Déposer votre annonce
-                        </button>
-                    </p> -->
-                    <!-- Modal -->
-                    <div class="modal fade" id="modalDeposeAnnonce" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Déposer votre annonce</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <form id="annonces-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" enctype="multipart/form-data" action="annonces.php" method="post" novalidate>
-                                            <div class="form-group">
-                                                <label class="control-label" for="contact-name">Nom et Prénom</label>
-                                                <div class="controls">
-                                                    <input id="contact-name" name="contactName" placeholder="Votre nom/prénom/pseudo" class="form-control requiredField" data-new-placeholder="Votre nom" type="text" data-error-empty="Entrez votre nom et prénom">
-                                                    <i class="fa fa-user"></i>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label" for="contact-mail">Email</label>
-                                                <div class=" controls">
-                                                    <input id="contact-mail" name="contactEmail" placeholder="Votre email" class="form-control requiredField" data-new-placeholder="Votre email" type="email" data-error-empty="Entrez votre email" data-error-invalid="Adresse email invalide">
-                                                    <i class="fa fa-envelope"></i>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label" for="contact-title">Titre</label>
-                                                <div class="controls">
-                                                    <input id="contact-title" name="contactTitle" placeholder="Titre de l'objet" class="form-control requiredField" data-new-placeholder="titre" type="text" data-error-empty="Entrez le titre de l'objet">
-                                                    <i class="fa fa-user"></i>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label" for="contact-description">Description</label>
-                                                <div class="controls">
-                                                    <textarea id="contact-description" name="contactDescription" placeholder="Description de l'objet" class="form-control requiredField" data-new-placeholder="Votre description" rows="6" data-error-empty="Entrez la description de l'objet"></textarea>
-                                                    <i class="fa fa-comment"></i>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label" for="contact-image">Image</label>
-                                                <div class="controls">
-                                                    <input id="contact-image" type="file" name="contactImage" placeholder="Image de l'objet" class="form-control" data-new-placeholder="Votre Image" data-error-empty="Importez une image de l'objet">
-                                                    <i class="fa fa-image"></i>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label" for="contact-price">Prix</label>
-                                                <div class="controls">
-                                                    <input id="contact-price" name="contactPrice" placeholder="Prix de l'objet" class="form-control requiredField" data-new-placeholder="prix" type="text" data-error-empty="Entrez un prix">
-                                                    <i class="fa fa-euro"></i>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label" for="contact-codePostal">Code postal</label>
-                                                <div class="controls">
-                                                    <input id="contact-codePostal" name="contactCodePostal" placeholder="Votre code postal" class="form-control requiredField" data-new-placeholder="code postal" type="numeric" data-error-empty="Entrez votre code postal">
-                                                    <i class="fa fa-map-signs"></i>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label" for="contact-city">Ville</label>
-                                                <div class="controls">
-                                                    <input id="contact-city" name="contactCity" placeholder="Votre ville" class="form-control requiredField" data-new-placeholder="ville" type="text" data-error-empty="Entrez votre ville">
-                                                    <i class="fa fa-map"></i>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                <button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Erreur!" data-sending-message="Envoi..." data-ok-message="Message Envoyé">
-                                                    <i class="fa fa-paper-plane"></i> Envoyer votre annonce
-                                                </button>
-                                            </p>
-                                            <input type="hidden" name="submitted" id="submitted" value="true" />
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-6">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1703435406637911%26id%3D1417991315182323&width=500" width="500" height="542" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                     </div>
+                   <!--  <div id="slidr-div" class="col-xs-11 col-sm-11 col-md-12 col-lg-12">
+
+
+                    </div> -->
                 </div>
-                <ul class="row">
-                    <li id="maillotccv" class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="element__image">
-                            <a href="#maillotccv" class="element__link">
-                                <div class="element__image-wrapper">
-                                    <img class="element__image-src img-responsive" src="assets/images/annonces/maillot-ccv.jpg"
-                                    alt="maillot ccv">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="element__metadata">
-                            <p class="element__heading">Maillot CCV</p>
-                            <p class="element__seller">
-                                Par <a href="#">
-                                    Thomas Di Fruscia
-                                </a>
-                            </p>
-                            <p class="element__location">Vizille (38220)</p>
-                        </div>
-                        <div class="element__prices">
-                            <p class="element__price--old">45 €</p>
-                            <p class="element__price-contact">
-                                <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#contact-maillot">
-                                    <i class="fa fa-phone" aria-hidden="true"> Contacter</i>
-                                </button>
-                            </p>
-                        </div>
-                        <div class="modal fade" id="contact-maillot" tabindex="-1" role="dialog" aria-labelledby="contactModal-maillot">
-                         	<div class="modal-dialog" role="document">
-                            	<div class="modal-content">
-		                            <div class="modal-header">
-		                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		                                <h4 class="modal-title" id="contactModal-maillot">Contacter</h4>
-		                            </div>
-		                            <div class="modal-body">
-		                                <p>Tel: 06 88 15 47 58</p>
-		                            </div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-									</div>
-                            	</div>
-                          	</div>
-                        </div>
-                    </li>
-                    <li id="cuissarde-ccv" class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="element__image">
-                            <a href="#cuissarde-ccv" class="element__link">
-                                <div class="element__image-wrapper">
-                                    <img class="element__image-src  img-responsive" src="assets/images/annonces/cuissarde-ccv.jpg"
-                                    alt="cuissarde-ccv">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="element__metadata">
-                            <p class="element__heading">Cuissarde CCV</p>
-                            <p class="element__seller">
-                                Par <a href="#">
-                                    Thomas Di Fruscia
-                                </a>
-                            </p>
-                            <p class="element__location">Vizille (38220)</p>
-                        </div>
-                        <div class="element__prices">
-                            <p class="element__price--old">50 €</p>
-                            <p class="element__price-contact">
-                                <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#contact-cuissarde">
-                                    <i class="fa fa-phone" aria-hidden="true"> Contacter</i>
-                                </button>
-                            </p>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="contact-cuissarde" tabindex="-1" role="dialog" aria-labelledby="contactModal-cuissarde">
-                         	<div class="modal-dialog" role="document">
-                            	<div class="modal-content">
-		                            <div class="modal-header">
-		                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		                                <h4 class="modal-title" id="contactModal-cuissarde">Contacter</h4>
-		                            </div>
-		                            <div class="modal-body">
-		                                <p>Tel: 06 88 15 47 58</p>
-		                            </div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-									</div>
-                            	</div>
-                          	</div>
-                        </div>
-                    </li>
-                    <!--
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="element__image" >
-                            <div class="element__image-wrapper" data-toggle="modal" data-target="#modalImage">
-                                <img class="element__image-src" src="http://www.probikeshop.fr/images/products2/226/104240/600x600-104240-104240.jpg"
-                                alt="Vélo de Course GHOST NIVOLET 9 LC Dura-Ace 9000 34/50 2015"
-                                width="139" height="130">
-                            </div>
-                            <div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Vélo de Course GHOST NIVOLET 9 LC Dura-Ace 9000 34/50 2015</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-md-6 element__image-wrapper">
-                                                    <img class="element__image-src" src="http://www.probikeshop.fr/images/products2/226/104240/600x600-104240-104240.jpg"
-                                                        alt="Vélo de Course GHOST NIVOLET 9 LC Dura-Ace 9000 34/50 2015"
-                                                        width="400" height="400">
-                                                </div>
-                                                <div class="col-md-6 element__prices">
-                                                    <p class="element__price--old">3 999,90 €</p>
-                                                </div>
-                                            </div>
-                                            <div class="element__metadata">
-                                                <p class="element__heading">Vélo de Course GHOST NIVOLET 9 LC Dura-Ace 9000 34/50 2015</p>
-                                                <p class="element__description">
-                                                Le vélo de course GHOST Nivolet 9 LC Gris est le modèle le plus haut de gamme de la marque allemande, destiné aux compétiteurs les plus exigeants recherchant le meilleur. Polyvalent, il offre une transmission de la force sans perte, sans toutefois renoncer au confort de conduite, permettant des accélérations nerveuses et un maniement extrêmement précis. Ultraléger grâce à son cadre carbone performant de seulement 880 grammes, le Nivolet 9 LC bénéficie d’un équipement homogène de très haut niveau, notamment avec une transmission Dura Ace garantissant des changements de vitesses incroyablement rapides et précis, ainsi qu'avec les superbes et efficaces roues Mavic R-Sys SLR procurant un plaisir de pilotage maximal quel que soit le terrain.
-                                                </p>
-                                                <p class="element__seller">
-                                                    Par <a href="#">
-                                                        Thomas Di Fruscia
-                                                    </a>
-                                                </p>
-                                                <p class="element__location">Varces (38760)</p>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button id="myContact" type="submit" class="btn btn-success" data-loading-text="0783465951" autocomplete="off">
-                                                <i class="fa fa-phone" aria-hidden="true"> Contacter</i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="element__metadata">
-                            <p class="element__heading">Vélo de Course GHOST NIVOLET 9 LC Dura-Ace 9000 34/50 2015</p>
-                            <p class="element__seller">
-                                Par <a href="#">
-                                    Thomas Di Fruscia
-                                </a>
-                            </p>
-                            <p class="element__location">Varces (38760)</p>
-                        </div>
-                        <div class="element__prices">
-                            <p class="element__price--old">3 999,90 €</p>
-                            <p class="element__price-contact">
-                                <button id="myContact" type="submit" class="btn btn-success" data-loading-text="0783465951" autocomplete="off">
-                                    <i class="fa fa-phone" aria-hidden="true"> Contacter</i>
-                                </button>
-                            </p>
-                        </div>
-                    </li>-->
-                </ul>
             </div>
         </section>
 
@@ -370,15 +123,62 @@
         =============================================== -->
         <section id="services" class="add-padding">
             <div class="container">
-                <h1 id="informations" class="section-title big-text scrollimation fade-up">Informations</h1>
+                <h1 id="informations" class="section-title big-text scrollimation fade-up">Projet 2017</h1>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                        <p class="lead text-center">Les permanences pour la saison 2016 :</p>
-                        <p>Des permanences auront lieux à Vizille pour permettre à ce qui le souhaite de prendre une licence avec le CCV.
-                            Elles auront lieux les vendredis 11 et 18 décembre ainsi que le vendredi 8 janvier de 19h à 20h30 au stade de rugby pour ces 3 permanences.
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="lead text-center">Pour la saison 2017 le CCV a de nombreux projet.
+                        </p>
+                        <p>Le premier projet est de remettre pour la deuxième année consécutive les Boucles Vizilloises. Basé sur les même parcours, nous espérons recevoir encore plus de monde que l’année précédente,
                         </p>
                         <p>
-                            Pour plus de renseignements contacter Mr Di Fruscia Thomas au 06 88 15 47 58 ou par mail thomas.difruscia@cycloclubvizille.com
+                        Mais en plus de cela, le CCV va  intervenir auprès des écoles vizilloises. En effet, un projet vélo a été mis en place dans les 4 écoles primaire de la ville de Vizille. Le CCV a pu négocier les prix des vélos enfants pour permettre aux parents d’offrir un vélo à leurs enfants. Mais en plus de cela, le CCV mettra en place des parcours pour les enfants lors des Boucles Vizilloises. Ce sera l’aboutissement du projet vélo pour les écoles et le démarrage d’un nouvel air pour le club.
+                        </p>
+                        <p>Car tout ce projet servira de tremplin pour le club pour créer une école de cyclisme en septembre 2017.
+                        </p>
+                        <p>Ceci sera le grand projet à long terme du CCV.
+                        </p>
+
+                        <p>
+                        Mais le club prévoit aussi de très belles choses pour les adhérents.
+                        </p>
+                        <p>
+                        En effet, un séjour est prévu à Roses, en Espagne du 1er au 5 Mars, pour permettre une bonne préparation des coureurs sous le soleil et la chaleur espagnol.
+                        </p>
+                        <p>Un autre séjour est prévu pour le 9 juin à Briançon. Ce séjour permettra aux coureurs de découvrir les cols mythiques comme l’Izoard, le col Agnel, le Galibier…
+                        </p>
+                        <p>Et le ou les derniers projets est de ce retrouvé un week end pour participer à une ou des cyclosportives tous ensemble pour montrer le maillot du club.
+                        </p>
+                        <p>Un calendrier des sorties serait aussi une des choses que nous voulons mettre en place pour que l’on soit le plus possible lors de ces sorties.
+                        </p>
+                        <p>L’idée d’organiser ces sorties permet aux coureurs de progresser ensemble et l’objectif pourraient-être commun pour beaucoup de personne.
+                        </p>
+                        <p>
+                        Un objectif de faire le BRA qui partira de Vizille le 23 Juillet prochain
+                        </p>
+                        <p>
+                        Voilà le CCV a de nombreux projet mais son principal objectif est de rester ce club convivial avec cette bonne ambiance qui règne dans le club.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="lead text-center">
+                        Mais le club prévoit aussi de très belles choses pour les adhérents.
+                        </p>
+                        <p>
+                        En effet, un séjour est prévu à Roses, en Espagne du 1er au 5 Mars, pour permettre une bonne préparation des coureurs sous le soleil et la chaleur espagnol.
+                        </p>
+                        <p>Un autre séjour est prévu pour le 9 juin à Briançon. Ce séjour permettra aux coureurs de découvrir les cols mythiques comme l’Izoard, le col Agnel, le Galibier…
+                        </p>
+                        <p>Et le ou les derniers projets est de ce retrouvé un week end pour participer à une ou des cyclosportives tous ensemble pour montrer le maillot du club.
+                        </p>
+                        <p>Un calendrier des sorties serait aussi une des choses que nous voulons mettre en place pour que l’on soit le plus possible lors de ces sorties.
+                        </p>
+                        <p>L’idée d’organiser ces sorties permet aux coureurs de progresser ensemble et l’objectif pourraient-être commun pour beaucoup de personne.
+                        </p>
+                        <p>
+                        Un objectif de faire le BRA qui partira de Vizille le 23 Juillet prochain
+                        </p>
+                        <p>
+                        Voilà le CCV a de nombreux projet mais son principal objectif est de rester ce club convivial avec cette bonne ambiance qui règne dans le club.
                         </p>
                     </div>
                 </div>
@@ -405,9 +205,7 @@
                         </div>
                         <h3>FFCT</h3>
                         <ul>
-                            <li>Mardi : 13h30 (sortie courte)</li>
                             <li>Mercredi : 14h</li>
-                            <li>Jeudi : 13h30 (sortie courte)</li>
                             <li>Samedi : 11h</li>
                             <li>Dimanche : 10h</li>
                         </ul>
@@ -452,56 +250,33 @@
             <div class="container" id="bilan">
                 <div class="row">
                     <div class="col-sm-8 col-md-6 text-right scrollimation fade-up d1">
-                        <h1 class="big-text">Bilan 2015</h1>
-                        <p class="lead">Rapport moral du Président</p>
+                        <h1 class="big-text">Bilan 2016</h1>
                         <p>
-                            Notre association a commencé à revivre en janvier dernier grâce à la volonté de la municipalité de revoir le CCV. Pour cette 1ère année le CCV a enregistré une vingtaine de licenciés. Un très bon chiffre compte tenu du réveil tardif de l’association. Car plusieurs personnes avaient déjà pris leurs licences  dans les clubs voisins. Mais ce dont nous sommes le plus fiers, c’est de l’ambiance qui règne dans notre club.
+                            Notre association a commencé en janvier 2015 grâce à la volonté de la municipalité de retrouver le CCV. Et pour cette deuxième année le club a enregistré 25 licenciés. Un très bon chiffre pour cette deuxième année. Mais     au-dessus de cela, c’est l’ambiance qui règne dans notre club qui est vraiment positive.
                         </p>
                         <p>
-                            En effet, dès notre 1ère année de nombreuse sorties club ont été faites, avec un grand plaisir de se retrouver pour les licenciés du club. Un bilan plus que positif, car la bonne ambiance était la priorité du club.
+                            En effet, sur la même lancée que nos 2 années précédentes de nombreuse sorties club ont été faites dans une ambiance très convivial.
                         </p>
                         <p>
-                            Côté organisation, nous avons organisé de très belles sorties. Notamment dès le début de saison, où malgré le froid, les coureurs ont trouvé le courage pour aller rouler.
+                            Nous avons pu organiser de belles sorties et ça dès le début de l’année. Grâce notamment à un hiver peu prononcé. Ensuite nous avons participé à de nombreuse randonnée cyclotouriste de la région grenobloise. Le CCV s’est montré sur les randonnées d’Echirolles, Saint Egrève… Sur ces randonnées le CCV avait toujours au moins 4 licenciés au départ.
                         </p>
-                        <p>
-                            Ensuite le club commença à grandir et les sorties devenait de plus en plus belles. Et pour ensuite enchainé sur la haute montagne. Des cols mythiques ont été franchis par les coureurs du CCV. Comme la Croix de Fer, le Glandon, l’Alpe d’Huez…
-                        </p>
-                        <p>
-                            Une bonne préparation pour ce qui aller suivre. Car le CCV organisa par la suite, un séjour-stage à Saint-Michel de Maurienne.  Les cols mythiques du Tour de France ont été gravis par les coureurs du CCV.
-                        </p>
-                        <p>
-                            Ce séjour-stage était l’une des premières animations du club. Une animation que nous souhaiterons renouveler pour 2016.
-                        </p>
-                        <p>
-                            La 2ème animation du CCV était le fameux Vizille-Nice. Malgré l’effondrement du tunnel du Chambon, nous avons plutôt fait un départ à Saint-Michel de Maurienne pour escalader le télégraphe et le Galibier au lieu du Lautaret. Nous nous sommes rendus à Nice en 2 jours en passant par les plus beaux cols des alpes, en faisant escale à Sauze puis à Nice.
-                        </p>
-                        <p>
-                            La suite de la saison à continuer avec de très belles sorties et ceci était une façon de souhaiter la bienvenue aux nouveaux licenciés, notamment à nos 1ères féminines.
-                            Côté sportif, les coureurs ont participé à de nombreuses manifestations comme le BRA. La plus mythique des randonnées cyclotouriste.
-                        </p>
-                        <p>
-                            Mais les coureurs ont aussi participé à de nombreuses cyclo sportives comme la Marmotte, la Vaujany, l’Etape du Tour… Et nous pouvons noter la participation d’un de nos coureurs au Championnat du Monde UWCT amateur au Danemark.
-                            Le club a aussi participé à une œuvre caritative, la Sapaudia, une association qui lutte contre le cancer.
-                            Un très bon bilan pour cette 1ère saison et nous remercions la municipalité, les sponsors et les licenciés qui ont contribué à cette réussite.
+                         <p>
+                            Car dès l’arrivée des beaux jours, le CCV se rendit à Saint-Tropez pour la première cylosportive des coureurs. Et de très bons résultats par nos coureurs lors de cette cyclo.
                         </p>
                     </div>
-                    <div class="col-sm-4 col-md-4 col-md-offset-1">
-                        <p class="lead">Projet à venir pour le CCV</p>
+                    <div class="col-sm-4 col-md-4 col-md-offset-1 scrollimation fade-up d1">
                         <p>
-                            De nombreux projets sont à venir pour le CCV.
-                            Pour 2016, le club souhaiterait refaire un séjour-stage avec le même principe que celui de 2015 à Saint-Michel de Maurienne. Le club souhaiterait aussi faire un Perpignan-Biarritz, la traversée des Pyrénées. Sous le même principe que Vizille-Nice.
-                            Suite à la forte demande de la municipalité et le soutien des adhérents du club, Le CCV souhaiterait organiser une manifestation sur la commune. Une randonnée, un circuit dans la ville, une course… Tout est envisageable. Nous nous concerterons pour une meilleure organisation afin de voir ce projet aboutir.
+                            Jean-Pierre Guérin, Alexandre Guérin ainsi que Patrick Richer ont parcouru la course ensemble terminant respectivement 281ème, 282ème et 283ème  et 24ème, 25ème, et 26ème de leur catégorie d’âge. Marty Fiat termine 216ème et 23ème de sa catégorie et Thomas Di Fruscia termine 21ème et 6ème de sa catégorie. Claire Valchera et Germain Di Fruscia ont fait le parcours randonnée ensemble de ce très beau Week End d’Avril.
                         </p>
-                        <p class="lead">Renouvellement du Bureau</p>
-                        <p>Le nouveau bureau voté à l’unanimité est constitué de :</p>
-                        <ul>
-                            <li><strong>Di Fruscia Thomas</strong> : président</li>
-                            <li><strong>Audo Irène</strong> : secrétaire</li>
-                            <li><strong>Di Fruscia Morgane</strong> : Trésorière</li>
-                            <li>Di Fruscia Germain : membre du bureau</li>
-                            <li>Guérin Jean-Pierre : membre du bureau</li>
-                            <li>Richer Patrick : membre du Bureau</li>
-                        </ul>
+                        <p>
+                            Ensuite ce fut l’ouverture des grands cols et du coup des belles sorties montagnardes. Ce fut aussi une bonne préparation pour les cyclos qui aller suivre. Et cette préparation a payé pour les adhérents du club.
+                        </p>
+                        <p>
+                            Car nous pouvons noter quelques résultats notables comme Germain Di Fruscia terminant la marmotte à la 146ème place sur les 7500 participants et 7ème de sa catégorie, et sur la Serre-Che Luc Alphand 22ème  au scratch et 6ème de sa catégorie. Thomas Di Fruscia quant à lui s’est illustré sur le Challenge Vercors terminant 10ème et 4ème de sa catégorie et sur la Vaujany 6ème  et un podium en étant 3ème de sa catégorie.
+                        </p>
+                        <p>
+                            Mais durant l’année le CCV a aussi créé les Boucles Vizilloises. Un projet de randonnée cyclotouriste a été mis en place le 28 Mai 2016. Et ce fut un sucée. En effet pour cette première édition, 200 cyclotouristes ont pris le départ.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -520,12 +295,18 @@
                 <div class="row">
 
                     <article class="col-xs-6 col-sm-6 col-md-6">
-                        <img class="img-responsive" src="assets/images/partenaires/image2.png"alt="Vers l'arbre">
+                        <img class="img-responsive" src="assets/images/partenaires/image2.jpg" alt="Horizon Paysage">
                     </article>
 
                     <article class="col-xs-6 col-sm-6 col-md-6">
                         <a href="http://www.ville-vizille.fr" target="_blank">
-                            <img class="img-responsive" src="assets/images/partenaires/image1.png"alt="Ville de Vizille">
+                            <img class="img-responsive" src="assets/images/partenaires/image1.png" alt="Ville de Vizille">
+                        </a>
+
+                    </article>
+                    <article class="col-xs-6 col-sm-6 col-md-6 voffset8">
+                        <a href="http://www.herbalifefrance.fr" target="_blank">
+                            <img class="img-responsive" src="assets/images/partenaires/image5.png" alt="Herbalife">
                         </a>
                     </article>
 
@@ -534,14 +315,14 @@
                 <div class="row">
 
                     <article class="col-xs-6 col-sm-6 col-md-6">
-                        <a href="http://www.herbalifefrance.fr" target="_blank">
-                            <img class="img-responsive" src="assets/images/partenaires/image3.png"alt="Herbalife">
+                        <a href="http://www.creditmutuel.fr" target="_blank">
+                            <img class="img-responsive" src="assets/images/partenaires/image3.jpg" alt="Credit Mutuel">
                         </a>
                     </article>
 
                     <article class="col-xs-6 col-sm-6 col-md-6">
                         <a href="http://piecesaccessoiresvelo.fr" target="_blank">
-                            <img class="img-responsive" src="assets/images/partenaires/image4.png"alt="Distri Cycle 38">
+                            <img class="img-responsive" src="assets/images/partenaires/image4.png" alt="Distri Cycle 38">
                         </a>
                     </article>
 
@@ -661,7 +442,6 @@
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="assets/js/contact.js"></script>
         <script src="assets/js/annonces.js"></script>
-        <script src="data/data.json"></script>
         <script src="assets/js/scripts.js"></script>
 
 
